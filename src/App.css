@@ -1,9 +1,14 @@
+html{
+  overflow-x: hidden;
+}
 .container{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   overflow-x: hidden;
+  width: 100%;
+  margin: 0px;
 }
 .Nav_bar{
   display: inline-block;
@@ -33,7 +38,6 @@ position: absolute;
   height: 45vh;
   border-radius: 10px;
   float: right;
-  margin-right: 25px;
   right: 20%;
   top: 150px;
 }
@@ -126,11 +130,6 @@ margin-top: 50px;
   border-radius: 10px;
   text-align: center;
 }
-.last_section{
-  width: 95vw;
-  height: 50vh;
-  text-align: center;
-}
 .chefs_images{
   position: absolute;
   width: 20vh;
@@ -198,24 +197,54 @@ height: fit-content;
 }
 
 
-@media (max-width : 1169px){
+
+@media (max-width :1070px){
   .third_section{
     flex-direction: column;
   }
-.Card{
-  margin-bottom: 10px;
+  .fourth_section{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    align-items: center;
+    justify-items: center;
+  }
+  .Card{
+    margin-bottom: 15px;
+  }
+  #user_img{
+    width: 30px;
+    height: auto;
+  }
+  .box{
+    display: block;
+    width: 90px;
+    height: 90px;
+  }
+  .Second_section h1{
+    margin: 50px;
+  }
 }
+
+
+@media (max-width : 760px){
 #plate1{
   width: 150px;
   height: auto;
-  right: 10px;
+  right: 15%;
   top: 40vh;
+  z-index: -1;
 }
 .first_section , .fourth_section{
   width: 80%;
+  margin: 25px;
+  z-index: -2;
 }
-.first_section p{
-  width: 45vw;
+#descitption{
+  left: 0%;
+  margin: 0px;
+  margin-left: 15vw;
+  width: 50vw;
 }
 
 
@@ -231,6 +260,8 @@ height: fit-content;
   display: block;
   height: fit-content;
   text-align: center;
+  width: 100%;
+  margin: 0px;
 }
 .footer_nav{
 margin: 10px;
@@ -253,4 +284,15 @@ margin: 10px;
   right: 25px;
 }
 }
-
+@media(max-width:288px){
+  .Card{
+    width: 250px;
+  }
+  #hamburger_menu{
+    width: 30px;
+    height: 30px;
+  }
+  .yellow_btn{
+    width: 110px;
+  }
+}

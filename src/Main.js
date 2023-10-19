@@ -14,9 +14,9 @@ export const Main = ()=>{
           <h1>Littel Lemon</h1>
           <p>We are a family owned mediterianne restaurant focused on traditioanl recipes served with modern twist</p>
           <button className="yellow_btn">Reserve a table</button>
-          
+         
         </section> 
-          <img src={sushi} alt='palteimg'  id="plate1"/>
+        <img src={sushi} alt='palteimg'  id="plate1"/>
         </section>
         <section className="Second_section">
             <h1>This week specials!</h1>

@@ -4,7 +4,7 @@ export const Miniboxs=()=>{
         <section className="box">
             <h1>Raiting</h1>
             <img src={user} alt="user" id="user_img"/>
-            <p>5 stars</p>
+            
         </section>
     );
 }
