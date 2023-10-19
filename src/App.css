@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 .Nav_bar{
   display: inline-block;
@@ -75,26 +76,24 @@ margin-top: 50px;
   margin-right: 150px;
 }
 .third_section{
+  display: flex;
   margin: 25px;
-  
   height: fit-content;
   width: fit-content;
 }
 .Card{
-  display: inline-block;
-  width: 20vw;
+  width: 300px;
   height: 70vh;
   background-color: rgba(237, 239, 238, 1);
   margin-right: 20px;
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  overflow-y: scroll;
   overflow-x: hidden;
 }
 .card_img{
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
-  width: 20vw;
+  width: 300px;
   height: 25vh;
 }
 .price{
@@ -167,6 +166,7 @@ justify-content: center;
 flex-direction: column;
 margin: 80px;
 width: 60vw;
+height: fit-content;
 }
 #test_h1{
   color:RGB(244,206,20); ;
@@ -188,3 +188,69 @@ width: 60vw;
 .footer_nav{
   margin-left: 50px;
 }
+
+#hamburger_menu{
+  position: absolute;
+  visibility: hidden;
+  width: 50px;
+  height: auto;
+  right: 25px;
+}
+
+
+@media (max-width : 1169px){
+  .third_section{
+    flex-direction: column;
+  }
+.Card{
+  margin-bottom: 10px;
+}
+#plate1{
+  width: 150px;
+  height: auto;
+  right: 10px;
+  top: 40vh;
+}
+.first_section , .fourth_section{
+  width: 80%;
+}
+.first_section p{
+  width: 45vw;
+}
+
+
+
+.last_section{
+  margin-bottom: 10vh;
+}
+#rest_img{
+  width: 250px;
+  height: auto;
+}
+.footer{
+  display: block;
+  height: fit-content;
+  text-align: center;
+}
+.footer_nav{
+margin: 10px;
+}
+.footerimg{
+  width: 150px;
+  height: auto;
+}
+#bar_nav{
+  width: 100%;
+  position: absolute;
+  top: 40px;
+  visibility: hidden;
+}
+#hamburger_menu{
+  position: absolute;
+  visibility: visible;
+  width: 50px;
+  height: auto;
+  right: 25px;
+}
+}
+
