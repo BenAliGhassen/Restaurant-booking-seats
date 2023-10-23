@@ -14,10 +14,10 @@ export const Nav = ()=>{
         <img src={logo} alt='logo' id="logo"/>
         
         <ul id={Id ? 'hmenu' : 'bar_nav'}>
-          <li className='Nav_menu'><a  href="#none">Home </a></li>
+          <li className='Nav_menu'><a  href="Home">Home </a></li>
           <li className='Nav_menu'><a  href="#none">About</a></li>
           <li className='Nav_menu'><a  href="#none" >Menu</a></li>
-          <li className='Nav_menu'><a  href="#none">Reservation</a></li>
+          <li className='Nav_menu'><a  href="Booking">Reservation</a></li>
           <li className='Nav_menu'><a  href="#none">Order online</a></li>
           <li className='Nav_menu'><a  href="#none">Login</a></li>
         </ul>
